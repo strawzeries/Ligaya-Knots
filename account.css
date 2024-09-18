@@ -1,0 +1,145 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../pics/bgpopular.png') !important; /* Adjust the path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Header Styles */
+header {
+    background-color:  #ffc1d9; 
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    transition: all 0.3s ease;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.header-image {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header-image img {
+    max-height: 80px;
+    display: block;
+    height: auto;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ff6aa9;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.nav2 {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav2 li {
+    margin: 0 10px;
+}
+
+.nav2 img {
+    width: 30px;
+    height: auto;
+}
+
+/* Login Form Styling */
+.login-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ffb3d9;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    position: absolute;
+    top: 100px; /* Position relative to the header */
+    right: 20px; /* Keep it aligned to the right */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-box h2 {
+    color: #ff6aa9;
+    margin-bottom: 15px;
+}
+
+.login-box label {
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-box button {
+    background-color: #ff6aa9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background-color: #ff3385;
+}
+
+.login-box .create-account {
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    color: #ff3385;
+    text-decoration: none;
+}
+
+.login-box .create-account:hover {
+    text-decoration: underline;
+}
